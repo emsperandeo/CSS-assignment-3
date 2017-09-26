@@ -5,8 +5,10 @@
 body {
   background: #b3dbe8;
   color: #000;
-  font-family: sans-serif; /*   add fonts   */
+  font-family: Raleway, Helvetica, sans-serif; /*   add fonts   */
 }
+
+img { max-width: 100% }
 
 
 /*  #container div (below) wraps all content _below_ the image
@@ -47,7 +49,7 @@ aside {
 
 h1, h2 {
   margin: 0;
-  font-family: serif; /*   add fonts   */
+  font-family: 'PT Serif', Times, serif; /*   add fonts   */
 }
 
 article h1 {
@@ -86,7 +88,6 @@ img {
   max-width: 100%;
 }
 
-
 /* links */
 
 a {
@@ -113,5 +114,16 @@ aside a:hover {
   clear: both;
 }
 
-
 /* put your media queries below */
+
+@media (max-width: 550px) {
+  body { margin: 0; }
+  #container { margin: 0;
+                }
+  article { margin: 0;
+            width: 100%;}
+  aside { margin: 0;
+          width: 100%;}
+  h1, h2 { max-width: 100%; }
+  #top-image-container { display: none; }
+}
